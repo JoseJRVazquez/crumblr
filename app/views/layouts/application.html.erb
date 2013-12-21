@@ -11,9 +11,27 @@
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
-    <%= link_to "Home" , "/" %>
-    <%= link_to "About" , "/about" %>
+		<div class="container">
+<div class="page-header">
+  
 
-		<%= yield %>
+
+			<ul class="nav nav-pills pull-right">
+			    <li>
+			    	<%= link_to "Home" , "/" %>
+			    </li>
+			    <li>
+			    	<%= link_to "About" , "/about" %>
+			    </li>
+			</ul>
+			<h1>
+  	<%= link_to "Crumblr", '/'%>
+  	<small>//home baked goodness</small>
+  	</h1>
+			</div>
+
+			<%= yield %>
+	</div>
 	</body>
 </html>
+
